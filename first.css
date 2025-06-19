@@ -1,0 +1,24 @@
+body{
+    background-image: url('/Web_devoplment/1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    
+}
+h1{
+    color: chartreuse;
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+p{
+    color: white;
+    font-family: 'Lucida Sans';
+    text-align: center;
+}
+
+a{
+    color: none;
+    text-decoration: none;
+    font-family: 'Lucida Sans';
+    text-align: center;
+}
