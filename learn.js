@@ -1,21 +1,13 @@
-let a = prompt("enter a number");
-let operator = prompt("enter a operator");
-let b = prompt("enter a number");
-
-switch (operator) {
-  case "+":
-    console.log(`sum of : ${a}+${b}=${Number(a) + Number(b)}`);
-    break;
-  case "+":
-    console.log(`substraction of : ${a}-${b}=${Number(a) - Number(b)}`);
-    break;
-  case "+":
-    console.log(`multipication of : ${a}*${b}=${Number(a) * Number(b)}`);
-    break;
-  case "+":
-    console.log(`division of : ${a}/${b}=${Number(a) / Number(b)}`);
-    break;
-
-  default:
-    break;
+let n = prompt("enter a number");
+let lastdigit;
+let rev = 0;
+// for (let i = 1; i <= n; i++) {
+//   f = f * i;
+// }
+// console.log("factorial is :" + f);
+while (n > 0) {
+  lastdigit = n % 10;
+  // rev = rev * 10 + lastdigit;
+  console.log("rev is :" + lastdigit);
+  n = n / 10;
 }
