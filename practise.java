@@ -3,25 +3,25 @@ import java.util.Scanner;
 
 public class practise {
 
+    public static void prime(int n) {
+        for (int i = 2; i <= n - 1; i++) {
+            if (n % i == 0) {
+                System.out.println("number is not prime=" + n);
+                break;
+
+            } else {
+                System.out.println("number is prime=" + n);
+                break;
+            }
+
+        }
+
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        char count = 'A';
+        prime(n);
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (i + j >= n + 1) {
-                    System.out.print(count);
-
-                } else {
-                    System.out.print(" ");
-                }
-                count++;
-
-            }
-            System.out.println("");
-
-        }
     }
-
 }

@@ -65,3 +65,15 @@
 // } else {
 //   console.log("you quit this game");
 // }
+let guess = prompt("enter movie name");
+let movie = "Krrish";
+while (guess != movie && guess != "quit") {
+  guess = prompt("enter movie");
+}
+if (guess == movie) {
+  console.log("congratulation you guess right movie");
+} else if (guess == "quit") {
+  console.log("tune quit kiya");
+} else {
+  console.log("enter right movie");
+}
