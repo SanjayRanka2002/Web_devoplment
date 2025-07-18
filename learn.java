@@ -82,16 +82,24 @@ public class learn {
         //     }
         //     System.out.println("");
         // }
-        // pattern of charcter like A,BC,CDE,FGHI
+        //  pattern of charcter like A,BC,CDE,FGHI
+        // int n = sc.nextInt();
+        // char c = 'A';
+        // for (int i = 1; i <= n; i++) {
+        //     for (int j = 1; j <= i; j++) {
+        //         System.out.print(c);
+        //         c++;
+        //     }
+        //     System.out.println("");
+        // }
         int n = sc.nextInt();
-        char c = 'A';
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(c);
-                c++;
-
-            }
-            System.out.println("");
+        int rev = 0;
+        int lastdigit;
+        while (n > 0) {
+            lastdigit = n % 10;
+            rev = (rev * 10) + lastdigit;
+            System.out.println("rev is : " + rev);
+            n = n / 10;
 
         }
 
