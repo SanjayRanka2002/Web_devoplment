@@ -117,4 +117,13 @@ let fruits = ["banana", "apple", "grapes"];
 fruits[1] = "pineapple";
 console.log(fruits);
 
-//
+//for loop
+// let n = prompt("odd number");
+// n = parseInt(n);
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= i; j++) {
+//     console.log(j);
+//   }
+// }
+
+//while loop

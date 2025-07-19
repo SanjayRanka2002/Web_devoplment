@@ -1,81 +1,86 @@
-//practise of string
+//string methods
 //trim method
-let Name = "  sanjayRanka   ";
-console.log(Name.length);
-let NewName = Name.trim();
-console.log(NewName.length);
-console.log(NewName);
+let a = "  sanjay  ";
+console.log(a.length);
+let b = a.trim();
+console.log(b);
+console.log(b.length);
 
-//index of
-let k = "Rankawat";
-console.log(k[3]);
+//indexof
+let c = "ShreeRam";
+console.log(c.indexOf("r"));
+console.log(c[5]);
 
 //slice method
-let d = "suyansh";
-console.log(d.slice(3, 6));
+let d = "Lachoocollege";
+console.log(d.slice(2, 6));
 
-//replace and repeat
-let m = "Miraj";
-console.log(m.replace("Mi", "Ni"));
+//method chaining
+let e = "college";
+console.log(e.toUpperCase().slice(3, 6));
 
-//repeat
-let a = "Leads";
-console.log(a.repeat(2));
+//repeat and replace
+let f = "Sanju";
+console.log(f.replace("S", "M").toUpperCase().repeat(2));
 
-//chaining method
-let z = "  kawasaki";
-console.log(z.trim().replace("ka", "ma").toUpperCase());
+//array methods
+//creat array
+let A = [5];
+A[0] = "shree";
+A[1] = "greet";
+A[2] = "preet";
+A[3] = "reet";
+A[6] = "bee";
+console.log(A);
 
-//array and array methods
 //push method
-let array1 = ["sanjay", "sneha", "snehil", "suyash"];
-console.log(array1.push("saloni"));
-console.log(array1[2][3]);
-console.log(array1);
+let B = ["kailash", "mithilesh", "kalesh"];
+console.log(B.push("kukesh"));
+console.log(B);
 
 //pop method
-let array2 = [1, 2, 3, 4, 5];
-console.log(array2.pop());
-console.log(array2);
+let C = [1, 2, 3, 4];
+console.log(C.pop());
+console.log(C);
 
-//unshift method
-let array3 = ["banana", "apple", "pineapple", "grapes"];
-console.log(array3.unshift("orange"));
-console.log(array3);
+//unshift
+let D = [1, 66.4, "sanjay", "mukesh"];
+console.log(D.unshift("kala"));
+console.log(D);
 
-//shift method
-let cars = ["toyota", "fortuner", "farari", "jaguar", "bmw"];
-console.log(cars.shift());
-console.log(cars);
+//shift
+let E = [3, 5, "sanjay", "jay"];
+console.log(E.shift());
+console.log(E);
 
-//concat method
-let first = [1, 2, 3, 4];
-let second = [5, 6, 7, 8];
-console.log(first.concat(second));
+//indexof
+let F = ["mukesh", "ramesh", "suresh", "gukesh", "jayesh"];
+console.log(F.indexOf("suresh"));
+console.log(F[3][2]);
+
+//slice
+let G = [1, 2, 3, 4, 5];
+console.log(G.slice(2, 4));
+console.log(G);
+
+//splice
+let H = [1, 3, 5, 7, 9];
+console.log(H.splice(2, 0, "sanjay"));
+console.log(H);
+
+//merge two arrays
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9, 10];
+console.log(arr1.concat(arr2));
 
 //include
-let fruits = ["papaya", "banana", "apple"];
-console.log(fruits.includes("chiku"));
+let arr3 = [1, 2, 3, 4, 5];
+console.log(arr3.includes(6));
 
-//indexof method
-let sports = ["cricket", "hockey", "badminton", "racing"];
-console.log(sports.indexOf("hockey"));
+//sort
+let array = ["mukesh", "ramesh", "suresh", "gukesh", "jayesh"];
+console.log(array.sort());
 
-//slice method
-let hobby = ["chay", "thinking", "writing", "singing"];
-console.log(hobby.slice(2, 3));
-console.log(hobby);
-
-//splice method
-let work = ["eating", "playing", "making", "jumping"];
-console.log(work.splice(1, 1));
-console.log(work.splice(2, 0, "bathing"));
-console.log(work);
-
-//sort method
-let arr = ["ansh", "jayesh", "sneha", "lavish"];
-console.log(arr.sort());
-
-//reverse method
-let v = [4, 2, 6, 7];
-console.log(v.reverse());
+//reverse
+let arrrr = [6, 7, 8, 9, 10];
+console.log(arrrr.reverse());

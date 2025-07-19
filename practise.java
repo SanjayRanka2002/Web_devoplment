@@ -279,7 +279,7 @@ public class practise {
         // reverse(389);
         // int rev = rev(179);
         // System.out.println(rev);
-        decimal(292);
+        //decimal(292);
         // calculator();
         //pattern1(5);
         // pattern2(5);
