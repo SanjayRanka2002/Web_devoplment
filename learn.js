@@ -65,15 +65,56 @@
 // } else {
 //   console.log("you quit this game");
 // }
-let guess = prompt("enter movie name");
-let movie = "Krrish";
-while (guess != movie && guess != "quit") {
-  guess = prompt("enter movie");
-}
-if (guess == movie) {
-  console.log("congratulation you guess right movie");
-} else if (guess == "quit") {
-  console.log("tune quit kiya");
-} else {
-  console.log("enter right movie");
-}
+// let guess = prompt("enter movie name");
+// let movie = "Krrish";
+// while (guess != movie && guess != "quit") {
+//   guess = prompt("enter movie");
+// }
+// if (guess == movie) {
+//   console.log("congratulation you guess right movie");
+// } else if (guess == "quit") {
+//   console.log("tune quit kiya");
+// } else {
+//   console.log("enter right movie");
+// }
+//string methods
+//first trim
+
+let Name = "   sanjay   ";
+console.log(Name.length);
+console.log(Name.trim().length);
+
+//second touppercase
+let Name1 = "  Hii Lonkey  ";
+console.log(Name1.trim().toUpperCase());
+
+//third index of isme argument dena pdta hai
+let a = "ShreeRam";
+console.log(a.indexOf("Ram"));
+
+//fourth chaining method
+let b = "jayshree";
+console.log(b.replace("jay", "su").repeat(3));
+
+//slice method
+let c = "Sukharam";
+console.log(c.slice(5, 7));
+
+//array methods
+let students = ["sanjay", "shree", "tarun", "vaibhav"];
+console.log(students[1]);
+
+//create an array
+let marks = [4];
+marks[0] = 55;
+marks[1] = "sanjay";
+marks[2] = 4.3;
+marks[3] = 50;
+console.log(marks);
+
+//arrays are mutable
+let fruits = ["banana", "apple", "grapes"];
+fruits[1] = "pineapple";
+console.log(fruits);
+
+//

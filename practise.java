@@ -18,9 +18,9 @@ public class practise {
         int f = 1;
         for (int i = 1; i <= n; i++) {
             f = f * i;
-
         }
         return f;
+
     }
     //bionomial theorem 
 
@@ -28,7 +28,6 @@ public class practise {
         int a = factorial(n);
         int b = factorial(r);
         int c = factorial(n - r);
-
         int bionomial = a / (b * c);
         return bionomial;
     }
@@ -52,35 +51,37 @@ public class practise {
     public static void range(int n) {
         for (int i = 2; i <= n; i++) {
             if (isprime(i)) {
-                System.out.print(i + " ");
+                System.out.println(i + " ");
 
             }
 
         }
+
     }
 
     //function of reverse number
     public static void reverse(int n) {
+        int lastdigit;
         while (n > 0) {
-            int lastdigit = n % 10;
+            lastdigit = n % 10;
             System.out.print(lastdigit);
             n = n / 10;
 
         }
-
     }
 
     public static int rev(int n) {
+        int lastdigit;
         int rev = 0;
         while (n > 0) {
-
-            int lastdigit = n % 10;
+            lastdigit = n % 10;
             rev = (rev * 10) + lastdigit;
             System.out.println("rev is :" + rev);
             n = n / 10;
 
         }
         return rev;
+
     }
     //binary to decimal
 
@@ -271,15 +272,14 @@ public class practise {
         // System.out.println("sum is =" + sum);
         // int f = factorial(5);
         // System.out.println("factorial is :" + f);
-        //System.out.println(isprime(5));
+        // System.out.println(isprime(4));
         // range(7);
         // int bionomial = bionomial(5, 3);
         // System.out.println("bionomial is=" + bionomial);
         // reverse(389);
-        //     int rev = rev(179);
-        //     System.out.println(rev);
-        // }
-        // decimal(292);
+        // int rev = rev(179);
+        // System.out.println(rev);
+        decimal(292);
         // calculator();
         //pattern1(5);
         // pattern2(5);
