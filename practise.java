@@ -18,6 +18,7 @@ public class practise {
         int f = 1;
         for (int i = 1; i <= n; i++) {
             f = f * i;
+
         }
         return f;
 
@@ -46,17 +47,17 @@ public class practise {
 
         }
         return true;
+
     }
 
     public static void range(int n) {
         for (int i = 2; i <= n; i++) {
             if (isprime(i)) {
-                System.out.println(i + " ");
+                System.out.print(i + " ");
 
             }
 
         }
-
     }
 
     //function of reverse number
@@ -66,8 +67,8 @@ public class practise {
             lastdigit = n % 10;
             System.out.print(lastdigit);
             n = n / 10;
-
         }
+
     }
 
     public static int rev(int n) {
@@ -81,15 +82,15 @@ public class practise {
 
         }
         return rev;
-
     }
     //binary to decimal
 
     public static void decimal(int n) {
         int mynum = n;
-        int pow = 0;
         int lastdigit;
         int dec = 0;
+        int pow = 0;
+
         while (n > 0) {
             lastdigit = n % 10;
             dec = dec + (int) (lastdigit * Math.pow(2, pow));
@@ -97,7 +98,7 @@ public class practise {
             n = n / 10;
 
         }
-        System.out.println("decimal number is :" + mynum + " = " + dec);
+        System.out.println("decimal number of:" + mynum + " =" + dec);
     }
 
     public static void calculator() {
@@ -272,14 +273,14 @@ public class practise {
         // System.out.println("sum is =" + sum);
         // int f = factorial(5);
         // System.out.println("factorial is :" + f);
-        // System.out.println(isprime(4));
+        // System.out.println(isprime(5));
         // range(7);
         // int bionomial = bionomial(5, 3);
         // System.out.println("bionomial is=" + bionomial);
         // reverse(389);
         // int rev = rev(179);
         // System.out.println(rev);
-        //decimal(292);
+        // decimal(292);
         // calculator();
         //pattern1(5);
         // pattern2(5);

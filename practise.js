@@ -1,86 +1,132 @@
-//string methods
+//string method
 //trim method
-let a = "  sanjay  ";
+let a = "   sanjayRanka";
 console.log(a.length);
-let b = a.trim();
-console.log(b);
-console.log(b.length);
+console.log(a.trim().length);
+console.log(a.trim());
 
-//indexof
-let c = "ShreeRam";
-console.log(c.indexOf("r"));
-console.log(c[5]);
+//indexof method
+let b = "jayranka";
+console.log(b.indexOf("r"));
+console.log(b.indexOf("k"));
 
 //slice method
-let d = "Lachoocollege";
-console.log(d.slice(2, 6));
+let c = "sumerseervi";
+console.log(c.slice(5, 8));
+console.log(c);
 
 //method chaining
-let e = "college";
-console.log(e.toUpperCase().slice(3, 6));
+let d = "Shreeya";
+console.log(d.toUpperCase().replace("S", "p"));
 
-//repeat and replace
-let f = "Sanju";
-console.log(f.replace("S", "M").toUpperCase().repeat(2));
+//replace and repeat method
+let e = "sneha";
+console.log(e.replace("s", "").repeat(3));
 
-//array methods
-//creat array
-let A = [5];
-A[0] = "shree";
-A[1] = "greet";
-A[2] = "preet";
-A[3] = "reet";
-A[6] = "bee";
-console.log(A);
+//array
+//creating array
+let f = [3];
+f[0] = "rani";
+f[1] = "kani";
+f[2] = "jani";
+f[4] = "maharani";
 
+console.log(f);
+
+//index of array
+let g = ["sanjay", "mahajay", "lunjay", "jay"];
+console.log(g[2][2]);
+
+//array method
 //push method
-let B = ["kailash", "mithilesh", "kalesh"];
-console.log(B.push("kukesh"));
-console.log(B);
+let h = ["A", "B", "C", "D"];
+console.log(h.push("E"));
+console.log(h);
 
 //pop method
-let C = [1, 2, 3, 4];
-console.log(C.pop());
-console.log(C);
+let i = ["juni", "suni", "guni", "jaouni"];
+console.log(i.pop());
+console.log(i);
 
-//unshift
-let D = [1, 66.4, "sanjay", "mukesh"];
-console.log(D.unshift("kala"));
-console.log(D);
+//unshift method
+let j = ["samy", "lukas", "chunni", "saloni"];
+console.log(j.unshift("farari"));
+console.log(j);
 
-//shift
-let E = [3, 5, "sanjay", "jay"];
-console.log(E.shift());
-console.log(E);
+//shift method
+let k = ["juhi", "sahi", "sakuni", "javed"];
+console.log(k.shift());
+console.log(k);
 
-//indexof
-let F = ["mukesh", "ramesh", "suresh", "gukesh", "jayesh"];
-console.log(F.indexOf("suresh"));
-console.log(F[3][2]);
+//index method
+let l = ["sunera", "puja", "kandra", "sutika"];
+console.log(l.indexOf("sutika"));
+console.log(l[2][4]);
 
-//slice
-let G = [1, 2, 3, 4, 5];
-console.log(G.slice(2, 4));
-console.log(G);
+//slice method
+let m = ["somya", "sakshi", "sunera", "surpish"];
+console.log(m.slice(1, 2));
+console.log(m);
 
-//splice
-let H = [1, 3, 5, 7, 9];
-console.log(H.splice(2, 0, "sanjay"));
-console.log(H);
+//splice method
+let n = ["nehal", "sunita", "snehil", "sunanchi"];
+console.log(n.splice(2, 1));
+console.log(n.splice(1, 0, "sanjay"));
+console.log(n);
 
-//merge two arrays
-let arr1 = [1, 2, 3, 4, 5];
-let arr2 = [6, 7, 8, 9, 10];
-console.log(arr1.concat(arr2));
+//sort method
+let o = [
+  "anushka",
+  "anjali",
+  "babita",
+  "catti",
+  "sukanta",
+  "daini",
+  "jola",
+  "voski",
+];
+console.log(o.sort());
 
-//include
-let arr3 = [1, 2, 3, 4, 5];
-console.log(arr3.includes(6));
+//concat method
+let p = [1, 2, 3, 4, 5];
+let q = [6, 7, 8, 9, 10];
+console.log(p.concat(q));
 
-//sort
-let array = ["mukesh", "ramesh", "suresh", "gukesh", "jayesh"];
-console.log(array.sort());
+//includes method
+let r = ["sveta", 4, 6, "suhani"];
+console.log(r.includes(4));
 
-//reverse
-let arrrr = [6, 7, 8, 9, 10];
-console.log(arrrr.reverse());
+//reverse method
+let s = ["smaira", "sloki", "puna"];
+console.log(s.reverse());
+
+//loops in array
+// let guess = prompt("enter movie name");
+// let movie = "java";
+
+// while (guess != movie && guess != "quit") {
+//   guess = prompt("wrong guess try again");
+// }
+// if (guess == movie) {
+//   console.log("you guess correct movie");
+// } else {
+//   console.log("you quit");
+// }
+// let array = 5;
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
+
+// let u = prompt("enter a number");
+// u = parseInt(u);
+// for (let i = u * 10; i >= u; i = i - u) {
+//   console.log(i);
+// }
+
+let w = prompt("enter a number");
+w = parseInt(w);
+for (let i = 1; i <= w; i++) {
+  for (let j = 1; j <= w; j++) {
+    console.log(i);
+  }
+}
