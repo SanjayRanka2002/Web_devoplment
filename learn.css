@@ -1,10 +1,52 @@
-h1 {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("./1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-div {
-  width: 25vw;
-  height: 25vh;
-  margin: left;
-  background-color: black;
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-items: start;
+  flex-wrap: wrap;
+  background-color: rgba(207, 232, 21, 0.1);
+}
+.logo {
+  margin-top: 15px;
+  margin-left: 2%;
+}
+.logo > a {
+  text-decoration: none;
+  text-shadow: 2px rgb(188, 188, 28);
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: blueviolet;
+}
+.navitems {
+  margin-top: 15px;
+  margin-right: 10%;
+}
+ul > li > a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+li {
+  display: inline-block;
+}
+
+.btn {
+  color: aliceblue;
+}
+.container-sm {
+  color: antiquewhite;
+}
+.fa-brands {
+  color: azure;
 }

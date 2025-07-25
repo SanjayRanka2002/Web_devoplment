@@ -18,23 +18,22 @@ public class practise {
         int f = 1;
         for (int i = 1; i <= n; i++) {
             f = f * i;
-
         }
         return f;
-
     }
-    //bionomial theorem 
 
+    //bionomial theorem 
     public static int bionomial(int n, int r) {
         int a = factorial(n);
         int b = factorial(r);
         int c = factorial(n - r);
-        int bionomial = a / (b * c);
-        return bionomial;
+        int factorial = a / (b * c);
+        return factorial;
     }
 
     //function of prime and range of prime 
     public static boolean isprime(int n) {
+
         if (n == 2) {
             System.out.println("always prime");
 
@@ -47,7 +46,6 @@ public class practise {
 
         }
         return true;
-
     }
 
     public static void range(int n) {
@@ -67,38 +65,39 @@ public class practise {
             lastdigit = n % 10;
             System.out.print(lastdigit);
             n = n / 10;
+
         }
 
     }
 
     public static int rev(int n) {
-        int lastdigit;
         int rev = 0;
+        int lastdigit;
         while (n > 0) {
             lastdigit = n % 10;
             rev = (rev * 10) + lastdigit;
-            System.out.println("rev is :" + rev);
+            System.out.println(rev);
             n = n / 10;
 
         }
         return rev;
     }
-    //binary to decimal
 
+    //binary to decimal
     public static void decimal(int n) {
         int mynum = n;
+        int pow = 0;
         int lastdigit;
         int dec = 0;
-        int pow = 0;
 
         while (n > 0) {
             lastdigit = n % 10;
             dec = dec + (int) (lastdigit * Math.pow(2, pow));
-            pow++;
             n = n / 10;
+            pow++;
 
         }
-        System.out.println("decimal number of:" + mynum + " =" + dec);
+        System.out.println("");
     }
 
     public static void calculator() {
