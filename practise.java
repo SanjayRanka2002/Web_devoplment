@@ -266,6 +266,77 @@ public class practise {
 
     }
 
+    //pair of array{}
+    public static void pair(int array[]) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                System.out.print("(" + array[i] + "," + array[j] + ")");
+
+            }
+            System.out.println("");
+
+        }
+    }
+
+    //subarray of array{}
+    public static void subarray(int array[]) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i; j < array.length; j++) {
+                for (int k = i; k <= j; k++) {
+                    System.out.print(array[k] + " ");
+
+                }
+                System.out.println("");
+
+            }
+            System.out.println("");
+
+        }
+
+    }
+
+    //reverse of array{}
+    public static void reversearray(int array[]) {
+        int first = 0;
+        int last = array.length - 1;
+
+        while (first < last) {
+            int temp = array[last];
+            array[last] = array[first];
+            array[first] = temp;
+            first++;
+            last--;
+
+        }
+    }
+
+    //largest element in array{}
+    public static int largest(int array[]) {
+        int largest = Integer.MIN_VALUE;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > largest) {
+                largest = array[i];
+
+            }
+
+        }
+        return largest;
+    }
+
+    //key find krna
+    public static int keyfind(int array[], int key) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == key) {
+                return i;
+
+            }
+
+        }
+        return -1;
+
+    }
+
     public static void main(String[] args) {
 
         // int sum = sum(5);
@@ -290,5 +361,23 @@ public class practise {
         //pattern7(5);
         //pattern8(5);
         //pattern9(5);
+        // pair(array);
+        // subarray(array);
+        // reversearray(array);
+        // for (int i = 0; i < array.length; i++) {
+        //     System.out.print(array[i] + " ");
+        // }
+        // int largest = largest(array);
+        // System.out.println("largest element in array is = " + largest);
+        int array[] = {1, 2, 3, 4, 5};
+        int key = 4;
+        int index = keyfind(array, key);
+        if (index == -1) {
+            System.out.println("nhi mili key");
+
+        } else {
+            System.out.println("mil gyi key is index pr :" + index);
+        }
+
     }
 }

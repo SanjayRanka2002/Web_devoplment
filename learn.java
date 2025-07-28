@@ -1,28 +1,30 @@
 
+import java.util.Scanner;
+
 public class learn {
 
-    public static void find(int array[]) {
-        int first = 0;
-        int last = array.length - 1;
-        while (first < last) {
-            int temp = array[last];
-            array[last] = array[first];
-            array[first] = temp;
-            first++;
-            last--;
+    public static void decimal(int n) {
+        int binary = n;
+        int pow = 0;
+        int dec = 0;
+        int lastdigit;
+
+        while (n > 0) {
+            lastdigit = n % 10;
+            dec = dec + (int) (lastdigit * Math.pow(2, pow));
+            n = n / 10;
+            pow++;
 
         }
+
+        System.out.println("my binary is :" + binary + " and decimal is :" + dec);
 
     }
 
     public static void main(String[] args) {
-        int array[] = {1, 2, 3, 4, 5};
-        find(array);
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-
-        }
-        System.out.println("");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        decimal(n);
 
     }
 }

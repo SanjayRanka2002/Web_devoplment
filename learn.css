@@ -50,3 +50,33 @@ li {
 .fa-brands {
   color: azure;
 }
+
+.navbar {
+  background-color: rgba(188, 182, 155, 0.3);
+  position: fixed;
+}
+.navbar-nav {
+  margin-left: 70%;
+}
+.nav-link {
+  color: cadetblue;
+  font-weight: bold;
+  padding-left: 2%;
+}
+
+.nav-link:hover {
+  color: whitesmoke;
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+.navbar-brand {
+  color: burlywood;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Anton";
+}
+.navbar-brand:hover {
+  color: rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+  transition: 1s;
+}

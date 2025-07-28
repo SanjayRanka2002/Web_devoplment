@@ -1,104 +1,104 @@
 //string method
 //trim method
-let a = "   sanjayRanka";
-console.log(a.length);
-console.log(a.trim().length);
-console.log(a.trim());
+// let a = "   sanjayRanka";
+// console.log(a.length);
+// console.log(a.trim().length);
+// console.log(a.trim());
 
 //indexof method
-let b = "jayranka";
-console.log(b.indexOf("r"));
-console.log(b.indexOf("k"));
+// let b = "jayranka";
+// console.log(b.indexOf("r"));
+// console.log(b.indexOf("k"));
 
 //slice method
-let c = "sumerseervi";
-console.log(c.slice(5, 8));
-console.log(c);
+// let c = "sumerseervi";
+// console.log(c.slice(5, 8));
+// console.log(c);
 
 //method chaining
-let d = "Shreeya";
-console.log(d.toUpperCase().replace("S", "p"));
+// let d = "Shreeya";
+// console.log(d.toUpperCase().replace("S", "p"));
 
 //replace and repeat method
-let e = "sneha";
-console.log(e.replace("s", "").repeat(3));
+// let e = "sneha";
+// console.log(e.replace("s", "").repeat(3));
 
 //array
 //creating array
-let f = [3];
-f[0] = "rani";
-f[1] = "kani";
-f[2] = "jani";
-f[4] = "maharani";
+// let f = [3];
+// f[0] = "rani";
+// f[1] = "kani";
+// f[2] = "jani";
+// f[4] = "maharani";
 
-console.log(f);
+// console.log(f);
 
 //index of array
-let g = ["sanjay", "mahajay", "lunjay", "jay"];
-console.log(g[2][2]);
+// let g = ["sanjay", "mahajay", "lunjay", "jay"];
+// console.log(g[2][2]);
 
 //array method
 //push method
-let h = ["A", "B", "C", "D"];
-console.log(h.push("E"));
-console.log(h);
+// let h = ["A", "B", "C", "D"];
+// console.log(h.push("E"));
+// console.log(h);
 
-//pop method
-let i = ["juni", "suni", "guni", "jaouni"];
-console.log(i.pop());
-console.log(i);
+// //pop method
+// let i = ["juni", "suni", "guni", "jaouni"];
+// console.log(i.pop());
+// console.log(i);
 
-//unshift method
-let j = ["samy", "lukas", "chunni", "saloni"];
-console.log(j.unshift("farari"));
-console.log(j);
+// //unshift method
+// let j = ["samy", "lukas", "chunni", "saloni"];
+// console.log(j.unshift("farari"));
+// console.log(j);
 
-//shift method
-let k = ["juhi", "sahi", "sakuni", "javed"];
-console.log(k.shift());
-console.log(k);
+// //shift method
+// let k = ["juhi", "sahi", "sakuni", "javed"];
+// console.log(k.shift());
+// console.log(k);
 
-//index method
-let l = ["sunera", "puja", "kandra", "sutika"];
-console.log(l.indexOf("sutika"));
-console.log(l[2][4]);
+// //index method
+// let l = ["sunera", "puja", "kandra", "sutika"];
+// console.log(l.indexOf("sutika"));
+// console.log(l[2][4]);
 
-//slice method
-let m = ["somya", "sakshi", "sunera", "surpish"];
-console.log(m.slice(1, 2));
-console.log(m);
+// //slice method
+// let m = ["somya", "sakshi", "sunera", "surpish"];
+// console.log(m.slice(1, 2));
+// console.log(m);
 
-//splice method
-let n = ["nehal", "sunita", "snehil", "sunanchi"];
-console.log(n.splice(2, 1));
-console.log(n.splice(1, 0, "sanjay"));
-console.log(n);
+// //splice method
+// let n = ["nehal", "sunita", "snehil", "sunanchi"];
+// console.log(n.splice(2, 1));
+// console.log(n.splice(1, 0, "sanjay"));
+// console.log(n);
 
-//sort method
-let o = [
-  "anushka",
-  "anjali",
-  "babita",
-  "catti",
-  "sukanta",
-  "daini",
-  "jola",
-  "voski",
-];
-console.log(o.sort());
+// //sort method
+// let o = [
+//   "anushka",
+//   "anjali",
+//   "babita",
+//   "catti",
+//   "sukanta",
+//   "daini",
+//   "jola",
+//   "voski",
+// ];
+// console.log(o.sort());
 
 //concat method
-let p = [1, 2, 3, 4, 5];
-let q = [6, 7, 8, 9, 10];
-console.log(p.concat(q));
+// let p = [1, 2, 3, 4, 5];
+// let q = [6, 7, 8, 9, 10];
+// console.log(p.concat(q));
 
 //includes method
-let r = ["sveta", 4, 6, "suhani"];
-console.log(r.includes(4));
+// let r = ["sveta", 4, 6, "suhani"];
+// console.log(r.includes(4));
 
 //reverse method
-let s = ["smaira", "sloki", "puna"];
-console.log(s.reverse());
+// let s = ["smaira", "sloki", "puna"];
+// console.log(s.reverse());
 
 //loops in array
 // let guess = prompt("enter movie name");
@@ -123,10 +123,53 @@ console.log(s.reverse());
 //   console.log(i);
 // }
 
-let w = prompt("enter a number");
-w = parseInt(w);
-for (let i = 1; i <= w; i++) {
-  for (let j = 1; j <= w; j++) {
-    console.log(i);
-  }
-}
+// let w = prompt("enter a number");
+// w = parseInt(w);
+// for (let i = 1; i <= w; i++) {
+//   for (let j = 1; j <= w; j++) {
+//     console.log(i);
+//   }
+// }
+
+//array output
+// let arr = ["sanjay", "ranka", "lunjay", "kumar"];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(i, arr[i]);
+// }
+// console.log("-------");
+// let arr2 = [
+//   ["sanjay", "ranka", "lunjay", "kumar"],
+//   ["sneha", "suman", "sumi", "suman"],
+//   ["shreya", "shweta", "shilpa", "shanti"],
+// ];
+// for (let i = 0; i < arr2.length; i++) {
+//   console.log(i, arr2[i]);
+//   for (let j = 0; j < arr2[i].length; j++) {
+//     console.log(arr2[i][j]);
+//   }
+// }
+
+// let todo = [];
+// let ask = prompt("what do you want to do? (add, remove, list, quit)");
+
+// while (true) {
+//   if (ask == "quit") {
+//     console.log("you quit");
+//     break;
+//   }
+//   if (ask == "add") {
+//     let task = prompt("what do you want to add in todo list?");
+//     todo.push(task);
+//     console.log(`task ${task} added to todo list`);
+//   } else if (ask == "list") {
+//     console.log("---LIst---");
+//     for (let i = 0; i < todo.length; i++) {
+//       console.log(i, todo[i]);
+//     }
+//   } else if (ask == "remove") {
+//     let index = prompt("enter the index value to remove item from todo list");
+//     todo.splice(index, 1);
+//     console.log(`task at index ${index} removed from todo list`);
+//   }
+//   ask = prompt("what do you want to do? (add, remove, list, quit)");
+// }
